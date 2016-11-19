@@ -35,6 +35,7 @@ class Brain {
         uint32_t readHighBeta();
         uint32_t readLowGamma();
         uint32_t readMidGamma();
+        boolean hasPower;
         void init();
     private:
         Stream* brainStream;        
@@ -47,7 +48,7 @@ class Brain {
         uint8_t checksum;
         uint8_t checksumAccumulator;
         uint8_t eegPowerLength;
-        boolean hasPower;
+       
         void clearPacket();
         void clearEegPower();
         boolean parsePacket();

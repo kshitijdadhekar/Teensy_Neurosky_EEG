@@ -218,9 +218,9 @@ char* Brain::readCSV() {
     // should be popped off the stack once it goes out of scope?
     // make the character array as small as possible
     
-    if(hasPower) {
+   // if(hasPower) {
         
-        sprintf(csvBuffer,"%d,%d,%d,%lu,%lu,%lu,%lu,%lu,%lu,%lu,%lu",
+            sprintf(csvBuffer,"%d,%d,%d,%lu,%lu,%lu,%lu,%lu,%lu,%lu,%lu",
             signalQuality,
             attention,
             meditation,
@@ -235,8 +235,8 @@ char* Brain::readCSV() {
         );
         
         return csvBuffer;
-    }
-    else {
+   // }
+ /*   else {
         sprintf(csvBuffer,"%d,%d,%d",
             signalQuality,
             attention,
@@ -244,7 +244,8 @@ char* Brain::readCSV() {
         );
         
         return csvBuffer;
-    }
+    } */
+//return NULL;
 }
 
 // For debugging, print the entire contents of the packet data array.
